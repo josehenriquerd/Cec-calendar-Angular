@@ -42,11 +42,18 @@ table {
 	border-spacing: 0;
 }
 
-:root{
-    --Autoblue: #183884;
-}
 
+
+
+:root{
+    --Autoblue: rgb(24, 56, 132);
+    --Autoblack: black;
+}
+body{
+  overflow: hidden;
+}
 *{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 

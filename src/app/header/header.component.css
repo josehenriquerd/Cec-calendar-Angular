@@ -1,0 +1,15 @@
+.cabecario-home{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  background-color: white;
+  padding-left: 40px;
+}
+.cabecario-home h2{
+  color: rgb(24, 56, 132);
+  font-size: 28px;
+  margin-left: 88px;
+  font-weight: lighter;
+}
