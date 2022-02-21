@@ -1,57 +1,88 @@
-<header>
-  <nav>
-      <div class="sidebar close">
-          <div class="logo-details">
-            <img src="../assets/img/AutoLogo.png" class="logo">
-          </div>
-          <ul class="nav-links">
-            <li>
-              <a href="/"><i><img src="../assets/img/icon-home.svg" alt="Tela Inicial"></i></a>
-              <ul class="sub-menu blank">
-                <li>
-                  <a class="link_name" href="/">Tela de Início</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <i> <img src="../assets/img/icon-calendario.svg" alt="Calendário"></i>
-              <ul class="sub-menu blank">
-                <li>
-                  <a class="link_name" href="#">Calendário</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/instrutores">
-                <i> <img src="../assets/img/icon-instrutores.svg" alt="Instrutores"></i>
-              </a>
-              <ul class="sub-menu blank">
-                <li>
-                  <a class="link_name" href="/instrutores">Instrutores</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/salas"><i> <img src="../assets/img/icon-salas.svg" alt="Salas"></i></a>
-              <ul class="sub-menu blank">
-                <li>
-                  <a class="link_name" href="/salas">Salas</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <i> <img src="../assets/img/icon-turmas.svg" alt="Turmas"></i>
-              <ul class="sub-menu blank">
-                <li><a class="link_name" href="#">Turmas</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="/disciplinas"><i> <img src="../assets/img/icon-disciplinas.svg" alt="Disciplinas"></i></a>
-              <ul class="sub-menu blank">
-                <li><a class="link_name" href="/disciplinas">Disciplinas</a></li>
-              </ul>
-            </li>
-          </ul>
-      </div>
-    </nav>
-</header>
+<nav>
+  <div class="sidebar close">
+    <ul class="nav-links">
+      <li>
+        <a routerLink="inicial"
+          ><i><img src="../assets/img/icon-home.svg" alt="Tela Inicial" /></i
+        ></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a routerLink="inicial" class="nav-link" routerLinkActive="Active"
+              >Inicial</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <i> <img src="../assets/img/icon-calendario.svg" alt="Calendário" /></i>
+        <ul class="sub-menu blank">
+          <li>
+            <a
+              routerLink="calendario"
+              class="nav-link"
+              routerLinkActive="Active"
+              >Calendario</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="professores">
+          <i>
+            <img src="../assets/img/icon-instrutores.svg" alt="Instrutores"
+          /></i>
+        </a>
+        <ul class="sub-menu blank">
+          <li>
+            <a
+              routerLink="professores"
+              class="nav-link"
+              routerLinkActive="Active"
+              >Professores</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="salas"
+          ><i> <img src="../assets/img/icon-salas.svg" alt="Salas" /></i
+        ></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a routerLink="salas" class="nav-link" routerLinkActive="Active"
+              >Salas</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <i> <img src="../assets/img/icon-turmas.svg" alt="Turmas" /></i>
+        <ul class="sub-menu blank">
+          <li>
+            <a routerLink="turmas" class="nav-link" routerLinkActive="Active"
+              >Turmas</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="disciplinas"
+          ><i>
+            <img
+              src="../assets/img/icon-disciplinas.svg"
+              alt="Disciplinas" /></i
+        ></a>
+        <ul class="sub-menu blank">
+          <li>
+            <a
+              routerLink="disciplinas"
+              class="nav-link"
+              routerLinkActive="Active"
+              >Disciplinas</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

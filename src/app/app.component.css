@@ -1,13 +1,14 @@
-:root{
+:root {
   --Autoblue: rgb(24, 56, 132);
   --Autoblack: black;
 }
-/* .home-section{
+.home-section {
   position: relative;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(250, 250, 250);
   min-height: 100vh;
   top: 0;
   left: 78px;
   width: calc(100% - 78px);
   transition: all 0.5s ease;
-} */
+  padding: 10px;
+}
