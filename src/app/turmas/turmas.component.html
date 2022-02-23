@@ -11,11 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr
-      *ngFor="let turma of turmas"
-      style="cursor: pointer"
-      (click)="turmaSelect(turma)"
-    >
+    <tr *ngFor="let turma of turmas" style="cursor: pointer">
       <th scope="row">{{ turma.nome }}</th>
       <td>{{ turma.dataInicio }}</td>
       <td>{{ turma.datafim }}</td>
@@ -27,7 +23,6 @@
           </button>
           <button
             (click)="openModal(template1)"
-            (click)="turmaSelect(turma)"
             class="btn btn-outline-primary"
           >
             Editar

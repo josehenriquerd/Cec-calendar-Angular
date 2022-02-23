@@ -1,3 +1,5 @@
+import { SalaService } from './sala.service';
+import { Sala } from './../models/Sala';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +10,27 @@ import { Component, OnInit } from '@angular/core';
 export class SalasComponent implements OnInit {
   titulo!: 'Salas';
 
-  constructor() {}
+  salaSelecionada!: Sala;
 
-  ngOnInit(): void {}
+  salas!: Sala[];
+  salaSelect(sala: Sala) {
+    this.salaSelecionada = sala;
+  }
+
+  constructor(private salaService: SalaService) {}
+
+  ngOnInit() {
+    this.carregarSalas();
+  }
+
+  carregarSalas() {
+    this.salaService.getAll().subscribe(
+      (sala: Sala[]) => {
+        this.salas = sala;
+      },
+      (erro: any) => {
+        console.error(erro);
+      }
+    );
+  }
 }
